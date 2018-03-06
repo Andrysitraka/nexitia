@@ -101,7 +101,7 @@ $sticky_header_style = ( $sticky_header ) ? ' fix_menu ' : '';
                         $style_logo =  ( ! empty( $color_logo ) ) ? 'style="color: '. esc_attr( $color_logo ) .' "' : '';
                         ?>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpg"  width="106px" height="46px" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"  width="106px" height="46px" />
                         </a>
 
                     </div>
