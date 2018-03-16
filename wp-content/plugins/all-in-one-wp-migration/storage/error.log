@@ -1,0 +1,9 @@
+Mar 07 2018 12:37:53
+{"Number":2,"Message":"unlink(C:\\xampp\\htdocs\\nexitia\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\phixwyt1l824\\filemap.list): Permission denied","File":"C:\\xampp\\htdocs\\nexitia\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Mar 07 2018 12:37:53
+{"Number":2,"Message":"unlink(C:\\xampp\\htdocs\\nexitia\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\phixwyt1l824\\localhost-nexitia-20180307-123734-934.wpress): Permission denied","File":"C:\\xampp\\htdocs\\nexitia\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Mar 07 2018 12:37:53
+{"Number":2,"Message":"rmdir(C:\\xampp\\htdocs\\nexitia\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\phixwyt1l824): Directory not empty","File":"C:\\xampp\\htdocs\\nexitia\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":54}
+
