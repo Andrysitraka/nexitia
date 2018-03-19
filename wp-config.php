@@ -18,21 +18,25 @@
  * @package WordPress
  */
 
+define('WP_HOME','http://nexitia.trustylabs.mg');
+define('WP_SITEURL','http://nexitia.trustylabs.mg');
+define('FS_METHOD', 'direct');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'nexitia');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'superadmin');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'atanabe-0');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '10.1.5.32');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
