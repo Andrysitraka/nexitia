@@ -11,8 +11,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sanjose
 */
 
+
 /* =WordPress Core
 -------------------------------------------------------------- */
+
 .alignnone {
     margin: 5px 20px 20px 0;
 }
@@ -24,7 +26,7 @@ div.aligncenter {
 }
 
 .alignright {
-    float:right;
+    float: right;
     margin: 5px 0 20px 20px;
 }
 
@@ -56,7 +58,8 @@ a img.aligncenter {
 .wp-caption {
     background: #fff;
     border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
+    max-width: 96%;
+    /* Image does not overflow the content area */
     padding: 5px 3px 10px;
     text-align: center;
 }
@@ -89,32 +92,73 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
+
 /* Text meant only for screen readers. */
+
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+input[type="email"] {
+    font-size: 16px;
+    background-color: #e2e2e2;
+    border: none;
+    color: #000;
+    width: 80%;
+    padding: 2%;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+}
+
+textarea {
+    font-size: 16px;
+    background-color: #e2e2e2;
+    border: none;
+    color: #000;
+    width: 80%;
+    padding: 2%;
+    border-radius: 5px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+input[type="submit"] {
+    -webkit-appearance: button;
+    color: #e2e2e2;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #f54414;
+    border: none;
+    width: 20%;
+    margin: auto;
+    display: block;
+    height: 40px;
 }
 
 .gallery-caption,
@@ -122,55 +166,64 @@ a img.aligncenter {
     font-family: inherit;
 }
 
+
 /* WordPress Gallery
 ------------------------------------------ */
 
 .gallery {
-	margin-left: -0.5em;
-	margin-right: -0.5em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
 }
 
 .gallery:after {
-	display: table;
-	content: "";
-	clear: both;
+    display: table;
+    content: "";
+    clear: both;
 }
 
 .gallery-item {
-	margin: 0;
-	float: left;
-	padding: 0.5em;
+    margin: 0;
+    float: left;
+    padding: 0.5em;
 }
 
 .gallery-item img {
-	width: 100%;
+    width: 100%;
 }
 
 .gallery-columns-1 .gallery-item {
     width: 100%;
     float: none;
 }
+
 .gallery-columns-2 .gallery-item {
     width: 50%
 }
+
 .gallery-columns-3 .gallery-item {
     width: 33.3333%
 }
+
 .gallery-columns-4 .gallery-item {
     width: 25%
 }
+
 .gallery-columns-5 .gallery-item {
     width: 20%
 }
+
 .gallery-columns-6 .gallery-item {
     width: 16.6667%
 }
+
 .gallery-columns-7 .gallery-item {
     width: 14.2857%
 }
+
 .gallery-columns-8 .gallery-item {
     width: 12.5%
 }
+
 .gallery-columns-9 .gallery-item {
     width: 11.1111%
 }
@@ -183,5 +236,5 @@ a img.aligncenter {
 .gallery-columns-7 .gallery-item:nth-child(7n+1),
 .gallery-columns-8 .gallery-item:nth-child(8n+1),
 .gallery-columns-9 .gallery-item:nth-child(9n+1) {
-	clear: left;
+    clear: left;
 }
