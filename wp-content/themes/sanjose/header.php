@@ -133,6 +133,7 @@ $sticky_header_style = ( $sticky_header ) ? ' fix_menu ' : '';
             </div>
 
         </div>
+        
 
 	</header>
 
