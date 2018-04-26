@@ -130,7 +130,7 @@ input[type="email"] {
     color: #000;
     width: 80%;
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: auto;
     display: block;
 }
@@ -142,7 +142,7 @@ input[type="fields"] {
     color: #000;
     width: 80%;
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 2px;
     margin: auto;
     display: block;
 }
@@ -154,7 +154,7 @@ textarea {
     color: #000;
     width: 80%;
     padding: 2%;
-    border-radius: 5px;
+    border-radius: 2px;
     height: 100px;
     margin: auto;
     display: block;
@@ -164,7 +164,7 @@ input[type="submit"] {
     -webkit-appearance: button;
     color: #e2e2e2;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 2px;
     background: #f54414;
     border: none;
     width: 20%;
