@@ -48,4 +48,14 @@ if ( ! function_exists( 'sanjose_after_setup' ) ) {
         add_theme_support( 'title-tag' );
     }
 }
+function icl_post_languages(){
+  $languages = icl_get_languages('skip_missing=1');
+  if(1 < count($languages)){
+    foreach($languages as $l){
+      if(!$l['active']) $langs[] = '<a style="color:white;font-size:18px;" href="'.$l['url'].'">'.$l['translated_name'].'</a>';
+    }
+    echo join(', ', $langs);
+  }
+}
 add_action( 'after_setup_theme', 'sanjose_after_setup' );
+

@@ -112,13 +112,9 @@ $sticky_header_style = ( $sticky_header ) ? ' fix_menu ' : '';
 
                     <nav id="main-menu" class="navigation clearfix">
 
-                        <?php
-
-                            sanjose_custom_menu();
-
-                           
-
-                        ?>
+                        <?php sanjose_custom_menu();  ?>
+					    <span style="margin-top:20px;"><?php icl_post_languages();?></span>
+                      
 
                     </nav>
 
