@@ -48,14 +48,19 @@ if ( ! function_exists( 'sanjose_after_setup' ) ) {
         add_theme_support( 'title-tag' );
     }
 }
-function icl_post_languages(){
-  $languages = icl_get_languages('skip_missing=1');
-  if(1 < count($languages)){
-    foreach($languages as $l){
-      if(!$l['active']) $langs[] = '<a style="color:white;font-size:18px;" href="'.$l['url'].'">'.$l['translated_name'].'</a>';
+
+function language_selector_flags(){
+    $languages = icl_get_languages('skip_missing=0&orderby=code');
+    if(!empty($languages)){
+        foreach($languages as $l){
+            if(!$l['active']){
+				echo '<a href="'.$l['url'].'">';
+				echo '<img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" />';
+				echo '</a>';
+			}
+        }
     }
-    echo join(', ', $langs);
-  }
 }
+
 add_action( 'after_setup_theme', 'sanjose_after_setup' );
 
