@@ -14,7 +14,11 @@ Text Domain: sanjose
 
 /* =WordPress Core
 -------------------------------------------------------------- */
-
+.nf-field-label label {
+        color: white;
+		font-size:14px;
+        font-style: normal;
+    }
 .alignnone {
     margin: 5px 20px 20px 0;
 }

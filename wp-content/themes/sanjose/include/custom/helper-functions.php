@@ -58,6 +58,7 @@ if ( ! function_exists( 'sanjose_custom_menu' ) ) {
 		if ( has_nav_menu( 'top-menu' ) ) {
 			$args['theme_location'] = 'top-menu';
 			$args['walker']         = $walker;
+			
 		} else {
 			$args['fallback_cb'] = 'wp_page_menu';
 		}

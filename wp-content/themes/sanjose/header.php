@@ -46,8 +46,6 @@ $sticky_header_style = ( $sticky_header ) ? ' fix_menu ' : '';
 
 ?>
 
-
-
 <!DOCTYPE html>
 
 <html <?php language_attributes(); ?>>
@@ -65,37 +63,23 @@ $sticky_header_style = ( $sticky_header ) ? ' fix_menu ' : '';
 		<?php wp_head(); ?>
 
   </head>
-
+ <div class="row">
+	
+</div>
+	
 <body <?php body_class(); ?>>
-
-
-
 	<?php if ( isset( $preloader_site ) && $preloader_site ) : ?>
-
 		<div id="loading"></div>
-
 	<?php endif; ?>
-
-
-
     <div class="mm-slideout<?php echo esc_attr( $unitclass ); ?>">
-
-
-
-	<header class="main-header clearfix <?php echo esc_attr( $header_style . $sticky_header_style); ?>">
-
+	<header style="margin-top:0px" class="main-header clearfix <?php echo esc_attr( $header_style . $sticky_header_style); ?>">
         <div class="container no-padd-md">
-
+		
+			
             <div class="row">
-
                 <div class="col-md-12">
-
-
-
                     <!-- Logo header -->
-
                     <div class="logo">
-
                        <?php
                         $color_logo = cs_get_option('text_color');
                         $style_logo =  ( ! empty( $color_logo ) ) ? 'style="color: '. esc_attr( $color_logo ) .' "' : '';
@@ -103,38 +87,22 @@ $sticky_header_style = ( $sticky_header ) ? ' fix_menu ' : '';
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logonexitia.png"  width="106px" height="46px" />
                         </a>
-
                     </div>
-
-
-
                     <!-- Navigation header -->
-
+					
+					
                     <nav id="main-menu" class="navigation clearfix">
-
-                        <?php
-
-                            sanjose_custom_menu();
-
-                           
-
-                        ?>
-
+                        <?php sanjose_custom_menu();  ?>  
+						<span class="pull-right" style="margin-top: 14px;z-index:1000"><?php language_selector_flags(); ?></span>
                     </nav>
-
-
-
                     <a class="menu-hamburger" href="#main-menu"><i></i></a>
-
-
-
                 </div>
-
             </div>
-
         </div>
-
 	</header>
+	
+
+
 
 
 
