@@ -93,7 +93,7 @@ $sticky_header_style = ( $sticky_header ) ? ' fix_menu ' : '';
 					
                     <nav id="main-menu" class="navigation clearfix">
                         <?php sanjose_custom_menu();  ?>  
-						<span class="pull-right" style="margin-top: 14px;z-index:1000"><?php language_selector_flags(); ?></span>
+						
                     </nav>
                     <a class="menu-hamburger" href="#main-menu"><i></i></a>
                 </div>

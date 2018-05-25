@@ -47,11 +47,17 @@ if ( ! function_exists( 'sanjose_get_options' ) ) {
 if ( ! function_exists( 'sanjose_custom_menu' ) ) {
 	function sanjose_custom_menu()
 	{
+		ob_start();
+		echo '<span class="pull-left flagsp"  style="margin-top:6px">';
+		language_selector_flags();
+		echo '</span>';
 
+		$selector = ob_get_clean();
+		
 		$walker = new Sanjose_Menu_Walker;
 		$args = array(
 			'container'      => '',
-			'items_wrap'     => '<ul class="main-menu">%3$s</ul>',
+			'items_wrap'     => '<ul class="main-menu">%3$s'.$selector.'</ul>',
 			'depth'          => 3
 		);
 
@@ -62,6 +68,7 @@ if ( ! function_exists( 'sanjose_custom_menu' ) ) {
 		} else {
 			$args['fallback_cb'] = 'wp_page_menu';
 		}
+		
 
 		wp_nav_menu( $args );
 	}

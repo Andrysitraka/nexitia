@@ -38,7 +38,12 @@
     /* 01 - CSS RESET BY ERIC MEYER */
     /*-------------------------------------------------------------------------------------------------------------------------------*/
     /* ninja refont*/
-    
+@media screen and (min-width:320px) and (max-width:1023px) {
+    .flagsp
+	{
+		margin-left:20px;
+	}
+}
     body,
     div,
     span,
